@@ -12,12 +12,12 @@
 
 <% @contact_messages.each do |contact_message| %>
   <tr>
-    <td style="padding: 0 15px;"><%= contact_message.name %></td>
-    <td style="padding: 0 15px;"><%= contact_message.email %></td>
-    <td style="padding: 0 15px;"><%= contact_message.message %></td>
-    <td style="padding: 0 15px;"><%= link_to 'Anzeigen', contact_message %></td>
-    <td style="padding: 0 15px;"><%= link_to 'Bearbeiten', edit_contact_message_path(contact_message) %></td>
-    <td style="padding: 0 15px;"><%= link_to 'Löschen', contact_message, method: :delete, data: { confirm: 'Bist Du sicher?' } %>
+    <td style="padding: 15px 15px;"><%= contact_message.name %></td>
+    <td style="padding: 15px 15px;"><%= contact_message.email %></td>
+    <td style="padding: 15px 15px;"><%= contact_message.message %></td>
+    <td style="padding: 15px 15px;"><%= link_to 'Anzeigen', contact_message %></td>
+    <td style="padding: 15px 15px;"><%= link_to 'Bearbeiten', edit_contact_message_path(contact_message) %></td>
+    <td style="padding: 15px 15px;"><%= link_to 'Löschen', contact_message, method: :delete, data: { confirm: 'Bist Du sicher?' } %>
     </td>
   </t>
 <% end %>
