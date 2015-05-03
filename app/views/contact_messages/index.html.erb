@@ -1,28 +1,27 @@
 <h1>Liste der Anfragen</h1>
-
-<table>
+<div class="container">
+<div class="well">
+<%= link_to 'Kontaktanfrage von Hand eintragen', new_contact_message_path %>
+</div>
+<div class="table-responsive">
+<table class="table table-striped">
+ <thead>
   <tr>
     <th style="padding-left: 15px; text-align: left;">Name</th>
     <th style="padding-left: 15px; text-align: left;">Email</th>
     <th style="padding-left: 15px; text-align: left;">Nachricht</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    
+ </thead>
+  <tbody>
+      <%= render "index" %>
+  </tbody>
+  
 
-<% @contact_messages.each do |contact_message| %>
-  <tr valign="top">
-    <td style="padding: 15px 15px;"><%= contact_message.name %></td>
-    <td style="padding: 15px 15px;"><%= contact_message.email %></td>
-    <td style="text-align: justify; padding: 15px 15px;"><%= contact_message.message %></td>
-    <td style="padding: 15px 15px;"><%= link_to 'Anzeigen', contact_message %></td>
-    <td style="padding: 15px 15px;"><%= link_to 'Bearbeiten', edit_contact_message_path(contact_message) %></td>
-    <td style="padding: 15px 15px;"><%= link_to 'Löschen', contact_message, method: :delete, data: { confirm: 'Bist Du sicher?' } %>
-    </td>
-  </t>
-<% end %>
+
 </table>
+</div>
+</div>
 
-<br />
 
-<%= link_to 'Kontaktanfrage von Hand eintragen', new_contact_message_path %>
+
+

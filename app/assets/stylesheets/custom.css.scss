@@ -114,7 +114,14 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid;
-  text-align: center; 
+  text-align: center;  
   
-  
+}
+
+
+table a{
+    display: none;
+}
+table tr:hover a{
+    display: block;
 }

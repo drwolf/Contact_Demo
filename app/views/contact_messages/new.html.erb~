@@ -1,4 +1,4 @@
-<h1 style="text-align: left; margin-left: 100px;">Kontaktieren Sie uns:</h1>
+<h1 style="text-align: left; margin-left: 120px;">Kontaktieren Sie uns:</h1>
 
 <%= render 'form' %>
 

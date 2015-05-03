@@ -1,4 +1,5 @@
 <%= form_for(@contact_message) do |f| %>
+<div class="modal-body">
   <% if @contact_message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contact_message.errors.count, "error") %> prohibited this contact_message from being saved:</h2>
@@ -20,10 +21,11 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :message %><br />
+    <%= f.label :message, "Nachricht" %><br />
     <%= f.text_area :message %>
   </div>
   <div>
+  
     <%= f.submit "Anfrage senden", class: 'btn btn-info' %>
   </div>
 <% end %>
