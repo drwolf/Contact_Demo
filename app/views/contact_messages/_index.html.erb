@@ -4,7 +4,7 @@
   <tr valign="top">
     <td style="padding: 15px 15px;"><%= contact_message.name %></td>
     <td style="padding: 15px 15px;"><%= contact_message.email %></td>
-    <td style="text-align: justify; padding: 15px 15px;"><%= contact_message.message %></td>
+    <td style="text-align: justify; padding: 15px 15px;"><%= truncate(contact_message.message, length: 200, separator: " ") %></td>
     
     <td><%= link_to 'Anzeigen', contact_message %> <%= link_to 'Bearbeiten', edit_contact_message_path(contact_message) %> <%= link_to 'Löschen', contact_message, method: :delete, data: { confirm: 'Bist Du sicher?' } %></td>
     
