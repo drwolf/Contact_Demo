@@ -2,7 +2,7 @@
 <div class="container">
 <div class="well">
 <%= link_to 'Kontaktanfrage von Hand eintragen', new_contact_message_path %>
-<div style="text-align: right;">Zum Bearbeiten auf Eintrag gehen</div>
+<span style="float: right;">Zum Bearbeiten auf Eintrag gehen</span>
 </div>
 <div class="table-responsive">
 <table class="table table-striped">
