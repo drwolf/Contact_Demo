@@ -1,3 +1,4 @@
+
 # Load the rails application
 require File.expand_path('../application', __FILE__)
 
@@ -13,3 +14,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'heroku.com',
   :enable_starttls_auto => true
 }
+

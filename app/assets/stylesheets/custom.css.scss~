@@ -119,9 +119,9 @@ footer {
 }
 
 
-table a{
+table a {
     display: none;
 }
-.pull tr:hover a{
+table tr:hover a {
     display: block;
 }
