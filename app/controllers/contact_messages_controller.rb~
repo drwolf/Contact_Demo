@@ -47,8 +47,8 @@ http_basic_authenticate_with  :name => "admin",
   def create
     @contact_message = ContactMessage.new(params[:contact_message])
     if @contact_message.save
-      #ContactMailer.confirmation(@contact_message.email).deliver
-      #ContactMailer.inquiry(@contact_message).deliver
+      ContactMailer.confirmation(@contact_message.email).deliver
+      ContactMailer.inquiry(@contact_message).deliver
       redirect_to root_url, notice: 'Danke für Ihre Nachricht. Sie erhalten in einigen Sekunden eine Email zur Bestätigung.'
     else
       render action: 'new'

@@ -1,8 +1,8 @@
 #encoding: utf-8
 class ContactMessagesController < ApplicationController
 
-http_basic_authenticate_with  :name => "admin",
-                              :password => "l1u2p3u4",
+http_basic_authenticate_with  :name => ENV["ADMIN_LOGIN"],
+                              :password => ENV["ADMIN_PWD"],
                               :except => [:new, :create]
   # GET /contact_messages
   # GET /contact_messages.json

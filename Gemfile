@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'figaro', "~> 0.7.0"
+
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
@@ -29,6 +31,8 @@ end
 group :assets do
   gem 'jquery-rails'
 end
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
