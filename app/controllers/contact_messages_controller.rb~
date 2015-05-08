@@ -1,8 +1,8 @@
 #encoding: utf-8
 class ContactMessagesController < ApplicationController
 
-http_basic_authenticate_with  :name => ENV["ADMI_LOGIN"],
-                              :password => ENV["ADMI_PWD"],
+http_basic_authenticate_with  :name => ENV["ADMIO_LOGIN"],
+                              :password => ENV["ADMIO_PWD"],
                               :except => [:new, :create]
   # GET /contact_messages
   # GET /contact_messages.json
