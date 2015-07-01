@@ -10,7 +10,7 @@ class ContactMailer < ActionMailer::Base
   def confirmation(email)
     attachments['rails.png'] = File.read("#{Rails.root}/app/assets/images/rails.png")
     
-    mail(to: email, from: "info@railsbuch.de", subject:
+    mail(to: email, from: "derrobertwolf@gmx.de", subject:
     "Ihre Kontaktnachricht erhalten") do |format|
       format.html { render layout: 'contact' }
       format.text
